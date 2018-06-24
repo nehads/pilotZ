@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_group">
+<item
+      android:id="@+id/sign_out_menu"
+      android:icon="@mipmap/icon_menu"
+      android:title="@string/sign_out"
+      android:fontFamily="helveticaRegular"
+      android:textColor="@color/black"
+    />
+
+        <item
+            android:id="@+id/about_us_menu"
+            android:icon="@mipmap/icon_menu"
+            android:title="@string/about_us"
+            android:fontFamily="helveticaRegular"
+            android:textColor="@color/black"
+            />
+
+    </group>
+
+</menu>

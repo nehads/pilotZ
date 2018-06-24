@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:gravity="center"
+              android:background="@color/displaycolor"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_layout_displayDetails"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:background="@drawable/border"
+
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="70dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="5dp"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tV_origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="ralewayRegular"
+            android:textColor="@color/black"
+            android:text="@string/source" />
+
+        <TextView
+            android:id="@+id/origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="ralewayRegular"
+            android:textColor="@color/black"
+            android:text="@string/loading" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="5dp"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tV_dest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="ralewayRegular"
+            android:textColor="@color/black"
+            android:text="@string/dest" />
+
+        <TextView
+            android:id="@+id/dest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="ralewayRegular"
+            android:textColor="@color/black"
+            android:text="@string/loading" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tV_fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="ralewayRegular"
+            android:textColor="@color/black"
+            android:text="@string/fare" />
+
+        <TextView
+            android:id="@+id/fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="ralewayRegular"
+            android:textColor="@color/black"
+            android:text="@string/loading" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/cancelledRequest"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/sticky_note_3"
+        android:visibility="gone">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:animateLayoutChanges="true"
+            android:elevation="150dp"
+            >
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="150dp"
+            android:layout_height="73dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:text="@string/cancel"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/yes_no_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            >
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="helveticaRegular"
+            android:textColor="@color/black"
+            android:layout_margin="8dp"
+            android:background="@drawable/decline_border"
+            android:text="@string/decline" />
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_border"
+            android:text="@string/accept"
+            android:fontFamily="helveticaRegular"
+            android:textColor="@color/black"
+            android:layout_marginLeft="30dp"/>
+
+        </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/otplayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:gravity="bottom|center"
+       >
+
+        <EditText
+            android:id="@+id/enterOTP"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:hint="@string/otp"
+            android:fontFamily="helveticaRegular"
+            android:textColor="@color/otp"
+            android:inputType="number"
+            android:maxLength="4"
+            android:layout_marginBottom="160dp"
+            app:backgroundTint="@color/for_helvicaR"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/enterOTP"
+            android:orientation="horizontal">
+        <Button
+            android:id="@+id/match"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+
+            android:fontFamily="helveticaRegular"
+            android:textColor="@color/black"
+            android:background="@drawable/button_border"
+            android:text="@string/match"/>
+
+            <Button
+                android:id="@+id/openMap"
+                android:layout_width="145dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="@string/maps"
+                android:gravity="center"
+                android:layout_margin="8dp"
+
+                android:background="@drawable/button_border"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

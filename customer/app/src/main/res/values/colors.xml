@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <color name="colorPrimary">#f1c551</color>
+    <color name="colorPrimaryDark">#bc941a</color>
+    <color name="colorAccent">#bc941a</color>
+    <color name="textColor">#75757575</color>
+    <color name="grey_100">#F5F5F5</color>
+
+    <color name="for_helvicaR">#4e4e4e</color>
+    <color name="for_rarewayR">#919291</color>
+    <color name="place_autocomplete_search_text">@color/for_rarewayR</color>
+    <color name="place_autocomplete_search_hint">@color/for_rarewayR</color>
+    <color name="displaycolor">#e1e2e1</color>
+    <color name="appbackground">#0d0d0d</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="black">#000000</color>
+    <color name="border_color">#f1c551</color>
+    <color name="colorButton">#f1c551</color>
+    <color name="cardview_initial_background">#71C3DE</color>
+</resources>
